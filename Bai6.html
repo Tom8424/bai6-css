@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bai6-CSS</title>
+    <link rel="shortcut icon" href="./dfe7e87cb0e8d10e.png">
+    <meta charset="UTF-8">
+    <style type="text/css">
+        #div_tong {
+            width: 100%;
+            height: 100vh;
+        }
+        #div_sanho {
+            height: 100%;
+            width: 20%;
+            background: black;
+            float: left;
+            position: relative;
+        }
+        #div_soc {
+            height: 100%;
+            width: 4%;
+            background-image: url(./soc.jpg);
+            float: left;
+        }
+        #div_noidungchinh {
+            height: 100%;
+            width: 75%;
+            background-image: url(./sua1.gif);
+            float: left;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+        }
+        #div_noidungchinh > .div_trai {
+            height: 100%;
+            width: 80%;
+            float: left;
+        }
+        .div_trai > .div_tren {
+            height: 20%;
+            width: 100%;
+            position: relative;
+        }
+        .div_trai > .div_duoi {
+            height: 80%;
+            width: 100%;
+            position: relative;
+        }
+        .div_duoi > .div_form {
+            height: 100%;
+            width: 80%;
+            background: lightgreen;
+            position: absolute;
+            left: 10%;
+            right: 10%;
+            top: 5px;
+        }
+        #div_noidungchinh > .div_phai {
+            height: 100%;
+            width: 20%;
+            float: left;
+        }
+        .check1{
+            width: 1.3em;
+            height: 1.3em;
+            background-color: white;
+            border-radius: 50%;
+            vertical-align: middle;
+            border: 1px solid #ddd;
+            appearance: none;
+            -webkit-appearance: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .check1:checked {
+            background-color: gray;
+        }
+        .check2{
+            width: 1.3em;
+            height: 1.3em;
+            background-color: white;
+            border-radius: 50%;
+            vertical-align: middle;
+            border: 1px solid #ddd;
+            appearance: none;
+            -webkit-appearance: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .check2:checked {
+            background-color: gray;
+        }
+        .check3{
+            width: 1.3em;
+            height: 1.3em;
+            background-color: white;
+            border-radius: 50%;
+            vertical-align: middle;
+            border: 1px solid #ddd;
+            appearance: none;
+            -webkit-appearance: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .check3:checked {
+            background-color: gray;
+        }
+        .check4{
+            width: 1.3em;
+            height: 1.3em;
+            background-color: white;
+            border-radius: 50%;
+            vertical-align: middle;
+            border: 1px solid #ddd;
+            appearance: none;
+            -webkit-appearance: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .check4:checked {
+            background-color: gray;
+        }
+        .check5{
+            width: 1.3em;
+            height: 1.3em;
+            background-color: white;
+            border-radius: 50%;
+            vertical-align: middle;
+            border: 1px solid #ddd;
+            appearance: none;
+            -webkit-appearance: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .check5:checked {
+            background-color: gray;
+        }
+        .check6{
+            width: 1.3em;
+            height: 1.3em;
+            background-color: white;
+            border-radius: 50%;
+            vertical-align: middle;
+            border: 1px solid #ddd;
+            appearance: none;
+            -webkit-appearance: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .check6:checked {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="div_tong">
+        <div id="div_sanho">
+            <img src="./sanho.gif" style="position: absolute; height: 98%; width: 125%;">
+        </div>
+        <div id="div_soc">
+        </div>
+        <div id="div_noidungchinh">
+            <div class="div_trai">
+                <div class="div_tren">
+                    <font style="color: rgb(209, 158, 154); font-size: 250%; position: absolute; top: 15px; left: 20px;"><b>THAM GIA CLB</b></font>
+                    <font style="position: absolute; bottom: 30px; left: 40px;">Quý độc giả hãy điền đầy đủ thông tin để tham gia phát triển Câu lạc bộ <br>ngày càng vững mạnh</font>
+                </div>
+                <div class="div_duoi">
+                    <div class="div_form"><br>
+                        <form>
+                            <table align="center" style="height: 100%;">
+                                <tr>
+                                    <td>Họ và tên:</td>
+                                    <td><input type="text" size="25">*</td>
+                                </tr>
+                                <tr><td></td></tr><tr><td></td></tr>
+                                <tr>
+                                    <td>&nbsp;&nbsp;&nbsp;Địa chỉ:</td>
+                                    <td><input type="text" size="30"></td>
+                                </tr>
+                                <tr><td></td></tr><tr><td></td></tr>
+                                <tr>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email:</td>
+                                    <td><input type="email" size="25">*</td>
+                                </tr>
+                                <tr><td></td></tr><tr><td></td></tr>
+                                <tr>
+                                    <td>Điện thoại:</td>
+                                    <td><input type="text" size="25">*</td>
+                                </tr>
+                                <tr><td></td></tr><tr><td></td></tr>
+                                <tr>
+                                    <td>Ngày sinh:</td>
+                                    <td><input type="date" size="25">*</td>
+                                </tr>
+                                <tr><td></td></tr><tr><td></td></tr>
+                                <tr>
+                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Đề tài:</td>
+                                    <td>
+                                        <select>
+                                            <option>Tìm hiểu Sứa biển</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr><td></td></tr><tr><td></td></tr>
+                                <tr>
+                                    <td rowspan="6" style="position: absolute; top: 220px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nhóm:</td>
+                                    <td rowspan="6">
+                                        <input type="checkbox" name="1" class="check1">Nghiên cứu<br>
+                                        <input type="checkbox" name="2" class="check2">Hải ngư<br>
+                                        <input type="checkbox" name="3" class="check3">Viễn dương<br>
+                                        <input type="checkbox" name="4" class="check4">Mỹ thuật<br>
+                                        <input type="checkbox" name="5" class="check5">Thực phẩm<br>
+                                        <input type="checkbox" name="6" class="check6">Sinh viên<br>
+                                    </td>
+                                </tr>
+                                <tr style="position: absolute; top: 370px;">
+                                    <td>&nbsp;Gởi hình:</td>
+                                    <td>&nbsp;&nbsp;<input type="file" accept="image/*" size="30"></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="5"style="position: absolute; top: 410px;">&nbsp;&nbsp;&nbsp;Tài liệu:</td>
+                                    <td rowspan="5" style="position: absolute; top: 410px; left: 218px;">
+                                        <input type="checkbox">Sinh vật Biển<br>
+                                        <input type="checkbox">Các loài Sứa biển<br>
+                                        <input type="checkbox">San hô<br>
+                                        <input type="checkbox">Môi trường Biển<br>
+                                        <input type="checkbox">Khí hậu<br>
+                                    </td>
+                                    <button type="submit" style="position: absolute; bottom: 5px; left: 228px;">Tham gia</button>
+                                    <button type="reset" style="position: absolute; bottom: 5px; left: 308px;">Xóa thông tin</button>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="div_phai">
+                <br><br>
+                <img src="./nhom1b.jpg"><br>
+                <img src="./nhom1a.jpg"><br>
+                <img src="./nhom1c.jpg"><br>
+                <img src="./nhom1d.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+    
